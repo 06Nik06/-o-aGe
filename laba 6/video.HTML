@@ -1,0 +1,30 @@
+html>
+<head>
+    <script src="vid.js"></script>
+        <style>
+            .hidden{
+                display:none;
+            }
+            #button {
+                border: solid 1px #333;
+                padding: 5px;
+                cursor: pointer;
+            }
+
+        </style>
+</head>
+<body>
+    <div>
+        <video id="video" src="tom.mp4" width="500" onclick="PlayPause()"></video>
+    </div>
+    <br>
+    <div>
+        <input id="ratio" style="width:500" type="range" onMouseDown="clearan()" onMouseUp="dv()" />
+        <div><input type="image" value="PlayPause" onClick="PlayPause()" src="play.png" />
+         Громкость
+        <input id="volume" value="100" min=0 max=100 type="range" onmousemove="changeVolume()" />
+        <input type="image" value="FullScreen" onClick="FullScreen()" src="pn.png" /></div>
+
+    </div>
+</body>
+</html>
